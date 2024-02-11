@@ -1,0 +1,61 @@
+{% load static %}
+
+<body style="background: #272727;">
+
+
+<nav class="navbar navbar-expand-lg shadow-lg" style="background-color: #272727">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url "HomePage:main" %}">
+            <img src="{% static "img/herobeat.svg" %}" alt=""/>
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="hr d-lg-block d-md-none d-none d-sm-none" style="background-color: gray"></div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #272727">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img src="{% static "img/herobeat.svg" %}" alt=""/>
+                </h5>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start align-items-start align-items-lg-center flex-grow-1 pe-3">
+                    <li class="nav-item me-lg-4" style="font-family: Yekan;font-size: 17px">
+                        <a class="nav-link active text-white" aria-current="page" href="{% url "HomePage:main" %}">خانه</a>
+                    </li>
+
+                    <li class="nav-item me-lg-4" style="font-family: Yekan;font-size: 17px">
+                        <a class="nav-link text-white" href="{% url "Tracks:albums" %}">آلبوم ها</a>
+                    </li>
+
+                    <li class="nav-item me-lg-4" style="font-family: Yekan;font-size: 17px">
+                        <a class="nav-link text-white" href="{% url "Tracks:songs" %}">آهنگ ها</a>
+                    </li>
+
+                </ul>
+
+
+                <div class="ms-lg-2 d-lg-block d-none" style="background-color: #707070;border-radius: 6px;width: 350px;padding: 3px 0">
+
+                    <a href="#"><div class="box-search"></div></a>
+
+                    <form method="GET" action="{% url "Tracks:search" %}" style="font-size: 16px;font-family: Yekan">
+
+                        <input name="q" type="text" class="txt-search holder-color text-white" name="" placeholder="جست و جو">
+
+                    </form>
+
+                </div>
+
+
+                <form method="GET" class="d-flex mt-3 d-lg-none d-block" role="search" action="{% url "Tracks:search" %}" >
+                    <input name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #707070">
+                    <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,2361 @@
+*{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+
+
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.eot') format('eot'),
+    url('../fonts/Yekan.woff') format('woff'),
+    url('../fonts/Yekan.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: 'Sahel-Bold';
+    src: url('../fonts/Sahel-Bold.eot') format('eot'),
+    url('../fonts/Sahel-Bold.woff') format('woff'),
+    url('../fonts/Sahel-Bold.ttf') format('ttf');
+}
+
+
+
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+/*body{*/
+/*    background: radial-gradient(#FB4B4E , #272727 , #272727);*/
+/*}*/
+
+
+
+
+.background{
+    width: 500px;
+    height: 900px;
+    position: absolute;
+    left: -150px;
+    top: 450px;
+    background: radial-gradient(#FB4B4E , #272727 , #272727);
+    opacity: 0.3;
+    z-index: -1;
+    border-right: 100px;
+    border-bottom-right-radius: 300px;
+    border-top-right-radius: 300px;
+}
+
+
+
+.background2{
+    width: 500px;
+    height: 1500px;
+    position: absolute;
+    right: -150px;
+    top: 450px;
+    background: radial-gradient(#FB4B4E , #272727 , #272727);
+    opacity: 0.3;
+    z-index: -1;
+    border-left: 100px;
+    border-bottom-left-radius: 300px;
+    border-top-left-radius: 300px;
+}
+
+
+
+
+
+.box-search{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    float: right;
+    margin-right: 5px;
+    margin-top: 2px;
+    background-image: url("../img/search.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.txt-search{
+    width: 290px;
+    padding: 1px 0;
+    background-color: transparent;
+    float: right;
+    margin-right: 7px;
+    margin-top: 2px;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+@media (max-width:991px){
+    .color{
+        background-color: darkgray;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+.box-login{
+    width: 160px;
+    background-color: blue;
+    position: absolute;
+    margin-top: 20px;
+    left: 20px;
+    display: none;
+}
+
+
+
+
+.close span{
+    float: left;
+    background-color: red;
+    margin-top: 10px;
+    margin-left: 13px;
+}
+
+
+
+
+
+.login a{
+    display: inline-block;
+    width: 160px;
+    padding: 11px 0;
+    background-color: palevioletred;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 16px;
+    font-family: yekan;
+}
+
+
+
+
+.register a{
+    display: inline-block;
+    width: 160px;
+    padding: 11px 0;
+    background-color: palevioletred;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 16px;
+    font-family: yekan;
+}
+
+
+
+
+
+@media (max-width:991px){
+    .box-login{
+        width: 200px;
+        background-color: green;
+        position: absolute;
+        margin-top: 10px;
+        right: 18px;
+    }
+
+
+    .login a{
+        width: 200px;
+        padding: 9px 0;
+        background-color: palevioletred;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+
+    .register a{
+        width: 200px;
+        padding: 9px 0;
+        background-color: palevioletred;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+.fa-search{
+    color: white;
+}
+
+
+.fa-caret-down{
+    color: white;
+}
+
+
+
+
+.hr{
+    width: 1.5px;
+    height: 35px;
+    background-color: #e2e0e5;
+    float: right;
+    margin-right: 14px;
+    margin-top: 3px;
+}
+
+
+
+
+.introduction{
+    width: 100%;
+}
+
+
+
+
+
+.hr_album{
+    width: 2px;
+    height: 175px;
+    background-color: darkgray;
+    float: right;
+    margin-right: 17px;
+    margin-top: 14px;
+}
+
+
+
+
+
+@media (min-width: 991px){
+    .site_992{
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 1110px){
+    .site_992{
+        display: block;
+    }
+}
+
+
+
+
+
+.box-honarmand{
+    width: 165px;
+    height: 186px;
+    background-color: transparent;
+    margin-right: 2.5px;
+}
+
+
+
+
+
+.honarmand{
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 11px;
+    border-radius: 120px;
+}
+
+
+
+.matn-honarmand{
+    width: 120px;
+    padding: 3px 0;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 9px;
+    font-size: 16px;
+    font-family: Yekan;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.button-podcast{
+    width: 100px;
+    padding: 3px 0;
+    border-radius: 6px;
+}
+
+
+
+@media (max-width: 454px){
+    .button-podcast{
+        width: 40%;
+        padding: 3px 0;
+        border-radius: 6px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+.div-podcast{
+    width: 100%;
+    min-height: 170px;
+    background-color: transparent;
+}
+
+
+
+
+.sini-div-podcast{
+    width: 1195px;
+    height: 100%;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.box-podcast{
+    width: 32%;
+    min-height: 170px;
+    background-color: #555555;
+    margin-right: 12px;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 15px;
+}
+
+
+
+.ax-podcast{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.ax-podcast img{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+
+
+.div-matn-podcast{
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+.onvan-podcast{
+    width: 200px;
+    padding: 2px 0;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 19px;
+    font-family: Sahel-Bold;
+    text-align: right;
+    color: white;
+}
+
+
+
+.name_honarmand{
+    width: 200px;
+    padding: 2px 0;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 17px;
+    font-size: 14px;
+    font-family: Yekan;
+    text-align: right;
+    color: white;
+}
+
+
+
+.docme_downlod_podcast{
+    width: 200px;
+    padding: 1px 0;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+.docme_downlod_podcast a{
+    width: 100px;
+    padding: 1px 0;
+    background-color: #A1A1A1;
+    float: left;
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    font-family: Yekan;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+
+.box-setare{
+    width: 200px;
+    height: 24px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+
+.fa-star{
+    float: left;
+    margin-top: 4px;
+}
+
+
+
+
+
+@media (max-width: 454px){
+
+    .div-podcast{
+        width: 100%;
+        min-height: 170px;
+        background-color: transparent;
+    }
+
+
+    .sini-div-podcast{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+    .box-podcast{
+        width: 95%;
+        height: 100px;
+        background-color: #555555;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+
+
+    .ax-podcast{
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .ax-podcast img{
+        width: 90%;
+        height: auto;
+    }
+
+
+
+
+    .div-matn-podcast{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+    .onvan-podcast{
+        width: 90%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 16px;
+        font-size: 19px;
+        font-family: Sahel-Bold;
+        text-align: center;
+    }
+
+
+
+    .name_honarmand{
+        width: 90%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: Yekan;
+        text-align: center;
+    }
+
+
+
+
+    .docme_downlod_podcast{
+        width: 90%;
+        padding: 1px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    .docme_downlod_podcast a{
+        width: 60%;
+        padding: 2px 0;
+        background-color: #A1A1A1;
+        display: block;
+        color: white;
+        font-size: 15px;
+        font-family: Yekan;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+    }
+
+
+
+
+    .box-setare{
+        width: 90%;
+        height: 24px;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+
+
+    .fa-star{
+        float: left;
+        margin-top: 4px;
+    }
+
+
+}
+
+
+
+
+
+@media (min-width: 455px) and (max-width: 650px){
+
+    .div-podcast{
+        width: 100%;
+        min-height: 170px;
+        background-color: transparent;
+    }
+
+
+    .sini-div-podcast{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+    .box-podcast{
+        width: 95%;
+        height: 100px;
+        background-color: #555555;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+
+
+
+    .ax-podcast{
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .ax-podcast img{
+        width: 70%;
+        height: auto;
+    }
+
+
+
+
+    .div-matn-podcast{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+
+
+    .onvan-podcast{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 16px;
+        font-size: 19px;
+        font-family: Sahel-Bold;
+        text-align: center;
+    }
+
+
+
+    .name_honarmand{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: Yekan;
+        text-align: center;
+    }
+
+
+
+
+    .docme_downlod_podcast{
+        width: 100%;
+        padding: 1px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    .docme_downlod_podcast a{
+        width: 60%;
+        padding: 2px 0;
+        background-color: #A1A1A1;
+        display: block;
+        color: white;
+        font-size: 15px;
+        font-family: Yekan;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+        margin-left: 15px;
+    }
+
+
+
+
+    .box-setare{
+        width: 100%;
+        height: 24px;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 651px) and (max-width: 800px){
+
+    .div-podcast{
+        width: 100%;
+        min-height: 170px;
+        background-color: transparent;
+    }
+
+
+    .sini-div-podcast{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+    .box-podcast{
+        width: 95%;
+        height: 100px;
+        background-color: #555555;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+
+
+
+    .ax-podcast{
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .ax-podcast img{
+        width: 50%;
+        height: auto;
+    }
+
+
+
+
+    .div-matn-podcast{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+
+
+    .onvan-podcast{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 16px;
+        font-size: 19px;
+        font-family: Sahel-Bold;
+        text-align: center;
+    }
+
+
+
+    .name_honarmand{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: Yekan;
+        text-align: center;
+    }
+
+
+
+
+    .docme_downlod_podcast{
+        width: 100%;
+        padding: 1px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    .docme_downlod_podcast a{
+        width: 60%;
+        padding: 2px 0;
+        background-color: #A1A1A1;
+        display: block;
+        color: white;
+        font-size: 15px;
+        font-family: Yekan;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+
+
+
+
+    .box-setare{
+        width: 100%;
+        height: 24px;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+}
+
+
+
+
+@media (min-width: 801px) and (max-width: 1101px){
+
+    .div-podcast{
+        width: 100%;
+        min-height: 170px;
+        background-color: transparent;
+    }
+
+
+    .sini-div-podcast{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+    .box-podcast{
+        width: 95%;
+        height: 100px;
+        background-color: #555555;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+
+
+
+    .ax-podcast{
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .ax-podcast img{
+        width: 40%;
+        height: auto;
+    }
+
+
+
+
+    .div-matn-podcast{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+
+
+    .onvan-podcast{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 16px;
+        font-size: 19px;
+        font-family: Sahel-Bold;
+        text-align: center;
+    }
+
+
+
+    .name_honarmand{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: Yekan;
+        text-align: center;
+    }
+
+
+
+
+    .docme_downlod_podcast{
+        width: 100%;
+        padding: 1px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    .docme_downlod_podcast a{
+        width: 60%;
+        padding: 2px 0;
+        background-color: #A1A1A1;
+        display: block;
+        color: white;
+        font-size: 15px;
+        font-family: Yekan;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+
+
+
+
+    .box-setare{
+        width: 100%;
+        height: 24px;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+}
+
+
+
+
+
+
+@media (min-width: 1101px) and (max-width: 1230px){
+
+    .div-podcast{
+        width: 100%;
+        min-height: 170px;
+        background-color: transparent;
+    }
+
+
+    .sini-div-podcast{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+    .box-podcast{
+        width: 50%;
+        height: 100px;
+        background-color: #555555;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+
+
+
+    .ax-podcast{
+        width: 25%;
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .ax-podcast img{
+        width: 90%;
+        height: auto;
+    }
+
+
+
+
+    .div-matn-podcast{
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+
+
+
+    .onvan-podcast{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 16px;
+        font-size: 17px;
+        font-family: Sahel-Bold;
+        text-align: center;
+    }
+
+
+
+    .name_honarmand{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: Yekan;
+        text-align: center;
+    }
+
+
+
+
+    .docme_downlod_podcast{
+        width: 100%;
+        padding: 1px 0;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 7px;
+    }
+
+
+    .docme_downlod_podcast a{
+        width: 60%;
+        padding: 2px 0;
+        background-color: #A1A1A1;
+        display: block;
+        color: white;
+        font-size: 15px;
+        font-family: Yekan;
+        text-decoration: none;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+    }
+
+
+
+
+    .box-setare{
+        width: 100%;
+        height: 24px;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+}
+
+
+
+
+
+.box-icon{
+    width: 175px;
+    height: 30px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 18px;
+}
+
+
+
+.icon{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.matn-icon{
+    width: 120px;
+    padding: 2px 0;
+    background-color: transparent;
+    float: right;
+    margin-right: 10px;
+    color: white;
+}
+
+
+
+.icon2{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+
+
+
+
+
+@media (max-width: 454px){
+
+    .box-icon{
+        width: 100%;
+        min-height: 30px;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+
+
+    .icon{
+        width: 15%;
+        height: 30px;
+        background-color: transparent;
+        float: right;
+    }
+
+
+    .icon img{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .matn-icon{
+        width: 75%;
+        padding: 2px 0;
+    }
+
+}
+
+
+
+
+
+
+.box-music{
+    width: 32%;
+    height: 100%;
+    background-color: transparent;
+    margin-right: 11.5px;
+    display: flex;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 15px;
+}
+
+
+
+
+.box-download-play{
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+}
+
+
+
+.play{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.download{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.box-matn-music{
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+
+.matn-onvan-music{
+    width: 100%;
+    padding: 1px 0;
+    background-color: transparent;
+    float: left;
+    margin-top: 6px;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    font-family: Sahel-Bold;
+}
+
+
+
+
+.matn-music{
+    width: 100%;
+    padding: 1px 0;
+    background-color: transparent;
+    float: left;
+    margin-top: 12px;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    font-family: Yekan;
+}
+
+
+
+
+.box-ax-music{
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px){
+
+    .box-music{
+        width: 100%;
+        height: 100%;
+        background-color: cyan;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+
+    .box-download-play{
+        width: 20%;
+        height: auto;
+        background-color: transparent;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+
+    .box-matn-music{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+
+
+    .matn-onvan-music{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: 0;
+    }
+
+
+    .matn-music{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+    }
+
+
+
+
+    .box-ax-music{
+        width: 20%;
+        height: auto;
+        background-color: transparent;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 601px) and (max-width: 768px){
+
+    .box-music{
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+
+    .box-download-play{
+        width: 20%;
+        height: auto;
+        background-color: transparent;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+
+
+    .box-matn-music{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+
+
+    .matn-onvan-music{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: 0;
+    }
+
+
+
+    .matn-onvan-music{
+        font-size: 16px;
+    }
+
+
+
+    .matn-music{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        padding-left: 8px;
+        /*margin-top: 5px;*/
+    }
+
+
+
+
+    .box-ax-music{
+        width: 35%;
+        height: auto;
+        background-color: transparent;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1200px){
+
+    .box-music{
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+
+    .box-download-play{
+        width: 20%;
+        height: auto;
+        background-color: transparent;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+
+
+    .box-matn-music{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+
+
+    .matn-onvan-music{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        margin: 0;
+    }
+
+
+
+    .matn-onvan-music{
+        font-size: 16px;
+    }
+
+
+
+    .matn-music{
+        width: 100%;
+        padding: 2px 0;
+        background-color: transparent;
+        padding-left: 8px;
+        /*margin-top: 5px;*/
+    }
+
+
+
+
+    .box-ax-music{
+        width: 35%;
+        height: auto;
+        background-color: transparent;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+.box-hesab-karbari{
+    width: 400px;
+    height: 350px;
+    background-color: #272727;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+
+.docme-login{
+    width: 260px;
+    padding: 10px 0;
+    background-color: #707070;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: Sahel-Bold;
+    border-radius: 13px;
+    margin-top: 30px;
+}
+
+
+
+.docme-login:hover{
+    background-color: grey;
+}
+
+
+
+
+.hr-karbari{
+    width: 315px;
+    height: 3px;
+    background-color: #707070;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+
+
+.docme-register{
+    width: 260px;
+    padding: 10px 0;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: Sahel-Bold;
+    border-radius: 13px;
+    margin-top: 25px;
+}
+
+
+
+.docme-register:hover{
+    background-color: #707070;
+}
+
+
+
+
+
+@media (max-width: 300px){
+
+    .box-hesab-karbari{
+        width: 100%;
+        height: 350px;
+        background-color: limegreen;
+        margin: auto;
+    }
+
+
+
+    .docme-login{
+        width: 90%;
+    }
+
+
+    .docme-register{
+        width: 90%;
+    }
+
+}
+
+
+
+
+.box-hesab-karbari2{
+    width: 400px;
+    height: 370px;
+    background-color: #272727;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+
+@media (max-width: 300px){
+
+    .box-hesab-karbari2{
+        width: 100%;
+        height: 370px;
+        background-color: limegreen;
+        margin: auto;
+    }
+
+}
+
+
+
+.honarmand{
+    box-shadow: 0 0 3px 3px #272727;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
+
+
+
+.honarmand:active{
+    border-color: blue;
+}
+
+
+
+
+.box-video{
+    width: 390px;
+    margin: auto;
+    background-color: transparent;
+    margin-top: 25px;
+}
+
+
+
+@media (max-width: 800px){
+    .box-video{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+
+@media (min-width: 801px) and (max-width: 1200px){
+
+    .box-video{
+        width: 50%;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+.order{
+    padding-top: 6px;
+}
+
+
+
+
+
+.box-hesab-karbari3{
+    width: 400px;
+    height: 415px;
+    background-color: #272727;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+
+@media (max-width: 300px){
+
+    .box-hesab-karbari3{
+        width: 100%;
+        height: 415px;
+        background-color: limegreen;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+
+
+.box-UserAccount{
+    width: 376px;
+    height: 40px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 25px;
+}
+
+
+
+
+.ax-UserAccount{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    float: right;
+}
+
+
+
+.matn-UserAccount{
+    width: 140px;
+    padding: 5px 0;
+    background-color: transparent;
+    float: right;
+    margin-right: 5px;
+    margin-top: 4px;
+    font-size: 18px;
+    font-family: Sahel-Bold;
+    color: white;
+    padding-right: 15px;
+}
+
+
+
+
+@media (max-width: 454px){
+
+    .carsul_slide{
+        margin-left: 0 !important;
+    }
+
+    .carsul_slide2{
+        margin-right: 0 !important;
+    }
+
+}
+
+
+
+.shadow-box {
+    box-shadow: 0 0 5px 5px #373737;
+}
+
+
+
+.hedfon{
+    box-shadow: 0 0 11px 11px #212021;
+}
+
+
+
+
+.box-music-play{
+    width: 475px;
+    height: 48px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+
+.box-play-music{
+    width: 33px;
+    height: 33px;
+    background-color: transparent;
+    float: left;
+    margin-left: 8px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.play-music{
+    width: 31px;
+    height: 31px;
+    background-color: transparent;
+    margin: auto;
+    background-image: url("../img/play.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.puse-music{
+    width: 31px;
+    height: 31px;
+    background-color: transparent;
+    margin: auto;
+    background-image: url("../img/play2.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+
+
+.time-music{
+    width: 83px;
+    height: 40px;
+    background-color: transparent;
+    float: left;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+
+
+
+.time-start{
+    width: 34px;
+    height: 40px;
+    background-color: transparent;
+    float: left;
+    padding-top: 11px;
+    text-align: left;
+    font-size: 14px;
+    font-family: Yekan;
+}
+
+
+
+.slash{
+    width: 6px;
+    height: 40px;
+    background-color: transparent;
+    float: left;
+    margin-left: 3px;
+    padding-top: 7px;
+}
+
+
+
+.time-end{
+    width: 34px;
+    height: 40px;
+    background-color: transparent;
+    float: left;
+    margin-left: 5px;
+    padding-top: 11px;
+    text-align: left;
+    font-size: 14px;
+    font-family: Yekan;
+}
+
+
+
+
+.box-line-music{
+    width: 280px;
+    height: 40px;
+    background-color: transparent;
+    float: left;
+    margin-left: 8px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.line-music{
+    width: 280px;
+    height: 4px;
+    background-color: #707070;
+    position: absolute;
+    left: 0;
+}
+
+
+
+.line-music-red{
+    width: 0;
+    height: 4px;
+    background-color: #FB4B4E;
+    float: left;
+}
+
+
+
+
+.box-sound{
+    width: 33px;
+    height: 33px;
+    background-color: transparent;
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sound{
+    width: 31px;
+    height: 31px;
+    background-color: transparent;
+    margin: auto;
+    background-image: url("../img/volume.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+@media (max-width: 454px){
+
+    .box-music-play{
+        width: 100%;
+    }
+
+
+    .box-play-music{
+        width: 8%;
+        height: 90%;
+        float: left;
+        margin-left: 0;
+        margin-top: 3px;
+    }
+
+
+    .play-music{
+        width: 100%;
+        background-size: 100%;
+    }
+
+    .puse-music{
+        width: 100%;
+        background-size: 100%;
+    }
+
+
+    .time-music{
+        width: 28%;
+        margin-left: 8px;
+    }
+
+
+    .time-start{
+        width: 35%;
+    }
+
+
+    .time-end{
+        width: 35%;
+    }
+
+
+    .box-line-music{
+        width: 45%;
+        margin-left: 0;
+    }
+
+
+    .line-music{
+        width: 100%;
+    }
+
+
+
+    .box-sound{
+        width: 10%;
+    }
+
+
+    .sound{
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media (min-width: 456px) and (max-width: 600px){
+
+    .box-music-play{
+        width: 100%;
+    }
+
+
+    .box-play-music{
+        width: 8%;
+        height: 90%;
+        float: left;
+        margin-left: 0;
+        margin-top: 3px;
+    }
+
+
+    .play-music{
+        width: 100%;
+        background-size: 100%;
+    }
+
+    .puse-music{
+        width: 100%;
+        background-size: 100%;
+    }
+
+
+    .time-music{
+        width: 28%;
+        margin-left: 8px;
+    }
+
+
+    .time-start{
+        width: 35%;
+    }
+
+
+    .time-end{
+        width: 35%;
+    }
+
+
+    .box-line-music{
+        width: 45%;
+        margin-left: 0;
+    }
+
+
+    .line-music{
+        width: 100%;
+    }
+
+
+
+    .box-sound{
+        width: 10%;
+    }
+
+
+    .sound{
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+.box-form-rast{
+    width: 600px;
+    min-height: 100px;
+    background-color: transparent;
+    float: right;
+    margin-top: 50px;
+}
+
+
+
+.box-form-chap{
+    width: 550px;
+    min-height: 100px;
+    background-color: transparent;
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+
+.box-form-center{
+    width: 1170px;
+    min-height: 100px;
+    background-color: transparent;
+    float: right;
+}
+
+
+
+
+@media (max-width: 454px){
+
+    .box-form-rast{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+
+
+    .box-form-chap{
+        display: none;
+    }
+
+
+    .box-form-center{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 456px) and (max-width: 1250px){
+
+    .box-form-rast{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+
+
+    .box-form-chap{
+        display: none;
+    }
+
+
+    .box-form-center{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+
+}
+
+
+
+.box-album-download{
+    width: 483px;
+    height: 48px;
+    background-color: #555555;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+
+
+
+.ax-p-music{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    float: right;
+    margin-right: 12px;
+    margin-top: 7px;
+    background-image: url("../img/music-icon.svg");
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.matn-p-music{
+    width: 174px;
+    padding: 3px 0;
+    background-color: transparent;
+    float: right;
+    font-size: 15px;
+    font-family: Yekan;
+    margin-top: 11px;
+    margin-right: 10px;
+    color: white;
+}
+
+
+
+
+.name-album{
+    width: 70px;
+    padding: 3px 0;
+    background-color: transparent;
+    float: right;
+    font-size: 15px;
+    font-family: Yekan;
+    margin-right: 15px;
+    margin-top: 11px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.ax-p-download{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    float: right;
+    margin-right: 119px;
+    margin-top: 7px;
+    background-image: url("../img/download.svg");
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+@media (max-width: 454px){
+
+    .box-album-download{
+        width: 100%;
+    }
+
+    .ax-p-music{
+        width: 8%;
+        margin-right: 6px;
+        background-size: 75%;
+    }
+
+
+
+    .matn-p-music{
+        width: 65%;
+    }
+
+
+    .name-album{
+        width: 7%;
+        margin-right: 10px;
+    }
+
+
+
+    .ax-p-download{
+        width: 6%;
+        margin-right: 13px;
+        background-size: 75%;
+    }
+
+}
+
+
+
+
+
+
+@media (min-width: 456px) and (max-width: 600px){
+
+    .box-album-download{
+        width: 100%;
+    }
+
+    .ax-p-music{
+        width: 8%;
+        margin-right: 6px;
+        background-size: 75%;
+    }
+
+
+
+    .matn-p-music{
+        width: 65%;
+    }
+
+
+    .name-album{
+        width: 7%;
+        margin-right: 10px;
+    }
+
+
+
+    .ax-p-download{
+        width: 6%;
+        margin-right: 13px;
+        background-size: 75%;
+    }
+
+}
+
+
+
+
+#more{
+    display: none;
+}
+
+
+
+
+::-webkit-input-placeholder{
+    color: white !important;
+}
+
+::-moz-placeholder{
+    color: white !important;
+}
+
+
+:-ms-input-placeholder{
+    color: white !important;
+}
+
+
+:-moz-placeholder{
+    color: white !important;
+}
+
+#audio{
+    width: 470px !important;
+    margin-top: 5px;
+
+}
+
+
+
+@media (max-width:454px){
+
+    #audio{
+        width: 100% !important;
+    }
+
+}
+
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagi {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    background-color: #555555;
+    font-family: Yekan;
+}
+
+
+.prev , .next{
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    background-color: #FB4B4E;
+    font-family: Sahel-Bold;
+}
+
+
+
+@media (max-width: 767px) {
+    .pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagess {
+        margin-top: 10px;
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 0 5px;
+    }
+
+    .pagi {
+        margin: 0 4px;
+        padding: 5px 8px;
+    }
+
+
+    .next{
+        margin-top: 10px;
+    }
+
+}
+
+.pagi.active {
+    background-color: #FB4B4E;
+    color: #fff;
+}

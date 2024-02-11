@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid mt-lg-5 mt-5 mt-sm-5">
+
+        <div class="container" style="height: 100%;max-width: 1195px">
+
+            <div class="row">
+
+                <div class="col-lg-12 m-lg-auto mt-lg-5 mt-4 mt-sm-4 mt-md-4 text-md-center text-center text-sm-center"
+                     style="color: #FB4B4E;font-size: 22px;font-family: Sahel-Bold">همه آهنگ ها
+                </div>
+
+            </div>
+
+
+            <div class="row mt-lg-4 mt-md-4 mt-4 mt-sm-4" data-aos="flip-up" data-aos-delay="200"
+                 data-aos-duration="2000">
+
+                {% for track in tracks_list %}
+                    <div class="col-lg-2 float-lg-end col-6 float-end col-sm-4 float-sm-end col-md-3 float-md-end">
+
+                        <a href="{% url "Tracks:track_detail" track.slug %}" class="text-decoration-none text-white">
+
+                            <div class="col-lg-12 m-lg-auto mt-lg-2 col-12 m-auto mt-2 col-sm-12 m-sm-auto mt-sm-2 col-md-12 m-md-auto mt-md-2 shadow-box"
+                                 style="padding-top: 0.5px;padding-bottom: 0.5px;border-radius: 20px;background-color: #555555">
+
+                                <div class="col-lg-10 m-lg-auto mt-lg-3 col-10 m-auto mt-3 col-sm-10 m-sm-auto mt-sm-3 col-md-10 m-md-auto mt-md-3"
+                                     style="border-radius: 15px;">
+                                    <img src="{{ track.cover.url }}" alt="" class="col-lg-12 col-12 col-sm-12 col-md-12"
+                                         style="border-radius: 15px;"/>
+                                </div>
+
+                                <div class="col-lg-12 m-lg-auto mt-lg-3 text-lg-center col-12 m-auto mt-3 mb-3 text-center col-sm-12 m-sm-auto mt-sm-3 mb-sm-3 text-sm-center col-md-12 m-md-auto mt-md-3 mb-md-3 text-md-center text-white"
+                                     style="font-size: 16px;font-family: Sahel-Bold">{{ track.farsi_name }}</div>
+
+                                <div class="col-lg-12 m-lg-auto mt-lg-2 mb-lg-3 text-lg-center col-12 m-auto mt-3 mb-3 text-center col-sm-12 m-sm-auto mt-sm-3 mb-sm-3 text-sm-center col-md-12 m-md-auto mt-md-3 mb-md-3 text-md-center text-white"
+                                     style="font-size: 14px;font-family: Sahel-Bold">{{ track.artist.first.farsi_name }}</div>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+                {% endfor %}
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    {% if tracks_list.has_other_pages %}
+        <div class="container-fluid mt-lg-5 mt-5 mt-sm-5 mt-md-5">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="pagination">
+                        {% if tracks_list.has_previous %}
+                            <a href="?page={{ tracks_list.previous_page_number }}" class="prev">قبلی</a>
+                        {% endif %}
+                        <div class="pagess">
+                            {% for i in tracks_list.paginator.page_range %}
+                                {% if tracks_list.number == i %}
+                                    <a href="?page={{ i }}" class="pagi active">{{ i }}</a>
+                                {% elif i > tracks_list.number|add:'-3' and i < tracks_list.number|add:'3' %}
+                                    <a href="?page={{ i }}" class="pagi">{{ i }}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        {% if tracks_list.has_next %}
+                            <a href="?page={{ tracks_list.next_page_number }}" class="next">بعدی</a>
+                        {% endif %}
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    {% endif %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

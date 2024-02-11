@@ -1,0 +1,250 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid mt-lg-5 mt-5 mt-sm-5">
+
+      <div class="container" style="height: 100%;max-width: 1195px">
+
+        <div class="row" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="2000">
+
+          <div class="col-lg-12 m-lg-auto mt-lg-4 col-12 m-auto mt-4 col-sm-12 m-sm-auto mt-sm-4 col-md-12 m-md-auto mt-md-4">
+
+            <div class="col-lg-5 m-lg-auto col-8 m-auto col-sm-8 m-sm-auto col-md-6 m-md-auto">
+              <img src="{{ album.image.url }}" alt="" class="col-lg-8 d-lg-block m-lg-auto mt-lg-2 col-12 d-block m-auto mt-2 col-sm-12 d-sm-block mt-sm-2 m-sm-auto col-md-12 m-md-auto mt-md-2 " style="border-radius: 20px"/>
+            </div>
+
+            <div class="col-lg-5 m-lg-auto mt-lg-3 text-lg-center col-12 m-auto mt-3 text-center col-sm-12 m-sm-auto mt-sm-3 text-sm-center col-md-12 m-md-auto mt-md-3" style="font-size: 18px;font-family: Yekan">دانلود دوتایی از دنیا و کیمیا</div>
+
+
+
+
+            <a href="{{ album.file_320.url }}">
+            <div class="box-album-download">
+
+              <div class="ax-p-music"></div>
+
+              <div class="matn-p-music">دانلود آلبوم با کیفیت 320 <span class="fas fa-angle-left" style="font-size: 13px;margin-right: 8px"></span></div>
+
+              <div class="name-album">یکجا</div>
+
+              <div class="ax-p-download"></div>
+
+            </div>
+            </a>
+
+
+
+            <a href="{% url "Tracks:album_320" album.slug %}">
+            <div class="box-album-download">
+
+              <div class="ax-p-music"></div>
+
+              <div class="matn-p-music">دانلود آلبوم با کیفیت 320 <span class="fas fa-angle-left" style="font-size: 13px;margin-right: 8px"></span></div>
+
+              <div class="name-album">تک تک</div>
+
+              <div class="ax-p-download"></div>
+
+            </div>
+            </a>
+
+
+            <a href="{{ album.file_128.url }}">
+            <div class="box-album-download">
+
+              <div class="ax-p-music"></div>
+
+              <div class="matn-p-music">دانلود آلبوم با کیفیت 128 <span class="fas fa-angle-left" style="font-size: 13px;margin-right: 8px"></span></div>
+
+              <div class="name-album">یکجا</div>
+
+              <div class="ax-p-download"></div>
+
+            </div>
+            </a>
+
+
+
+            <a href="{% url "Tracks:album_128" album.slug %}">
+            <div class="box-album-download">
+
+              <div class="ax-p-music"></div>
+
+              <div class="matn-p-music">دانلود آلبوم با کیفیت 128 <span class="fas fa-angle-left" style="font-size: 13px;margin-right: 8px"></span></div>
+
+              <div class="name-album">تک تک</div>
+
+              <div class="ax-p-download"></div>
+
+            </div>
+            </a>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid mt-lg-5 mt-5 mt-sm-5 mt-md-5">
+
+        <div class="container" style="height: 100%;max-width: 1195px;">
+
+            <div class="row">
+
+                <div class="col-lg-2 float-lg-end col-12 m-auto">
+                    <div class="col-lg-12 m-lg-auto text-lg-end col-12 m-auto text-center" style="font-size: 19px;font-family: Sahel-Bold;color: #FB4B4E">آلبوم های مشابه</div>
+                </div>
+
+                <div class="col-lg-10 float-lg-end d-lg-flex justify-content-lg-start align-items-lg-center d-lg-block d-none d-sm-none">
+
+                    <div class="col-lg-12" style="height: 3px;background-color: #707070"></div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="row mt-lg-4 mt-md-4 mt-4 mt-sm-4" data-aos="flip-up" data-aos-delay="200" data-aos-duration="2000">
+                {% for item in recent_albums %}
+                <div class="col-lg-2 float-lg-end col-6 float-end col-sm-4 float-sm-end col-md-3 float-md-end">
+
+                    <a href="{% url "Tracks:album_detail" item.slug %}" class="text-decoration-none text-white">
+
+                        <div class="col-lg-12 m-lg-auto mt-lg-2 col-12 m-auto mt-2 col-sm-12 m-sm-auto mt-sm-2 col-md-12 m-md-auto mt-md-2 shadow-box" style="padding-top: 0.5px;padding-bottom: 0.5px;border-radius: 20px;background-color: #555555">
+
+                            <div class="col-lg-10 m-lg-auto mt-lg-3 col-10 m-auto mt-3 col-sm-10 m-sm-auto mt-sm-3 col-md-10 m-md-auto mt-md-3" style="border-radius: 15px;">
+                                <img src="{{ item.image.url }}" alt="" class="col-lg-12 col-12 col-sm-12 col-md-12" style="border-radius: 15px;"/>
+                            </div>
+
+                            <div class="col-lg-12 m-lg-auto mt-lg-3 text-lg-center col-12 m-auto mt-3 mb-3 text-center col-sm-12 m-sm-auto mt-sm-3 mb-sm-3 text-sm-center col-md-12 m-md-auto mt-md-3 mb-md-3 text-md-center text-white" style="font-size: 16px;font-family: Sahel-Bold">
+                                {{ item.farsi_name }}</div>
+
+                            <div class="col-lg-12 m-lg-auto mt-lg-2 mb-lg-3 text-lg-center col-12 m-auto mt-3 mb-3 text-center col-sm-12 m-sm-auto mt-sm-3 mb-sm-3 text-sm-center col-md-12 m-md-auto mt-md-3 mb-md-3 text-md-center text-white" style="font-size: 14px;font-family: Sahel-Bold">
+                                {{ item.artist.first.farsi_name }}</div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+                {% endfor %}
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid mt-lg-5 mt-5 mt-sm-5">
+
+  <div class="container" style="height: 100%;max-width: 1195px">
+
+    <div class="row">
+
+      <div class="col-lg-2 float-lg-end col-12 m-auto">
+        <div class="col-lg-12 m-lg-auto mt-lg-5 text-lg-end col-12 m-auto mt-5 text-center" style="font-size: 19px;font-family: Sahel-Bold;color: #FB4B4E">دیدگاه شما</div>
+      </div>
+
+      <div class="col-lg-10 float-lg-end d-lg-flex justify-content-lg-start align-items-lg-center d-lg-block d-none d-sm-none">
+
+        <div class="col-lg-12 mt-lg-5" style="height: 3px;background-color: #707070"></div>
+
+      </div>
+
+
+
+      <div class="col-lg-12 m-lg-auto mt-lg-4 col-12 m-auto mt-4 col-sm-12 m-sm-auto mt-sm-4" style="background-color: transparent">
+
+        <form method="post" action="" style="font-size: 16px;font-family: Yekan">
+                      {% csrf_token %}
+
+                    <div class="box-form-rast">
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-white me-lg-2">نام</label>
+                            <input name="firstname" class="form-control holder-color text-white" id="exampleFormControlInput1" placeholder="مثال : حسین" style="background-color: #555555;border: none">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-white me-lg-2">نام خانوادگی</label>
+                            <input name="lastname" class="form-control holder-color text-white" id="exampleFormControlInput2" placeholder="مثال : حسینی" style="background-color: #555555;border: none">
+                        </div>
+
+                    </div>
+
+                    <div class="box-form-chap">
+
+                        <div class="col-lg-6 m-lg-auto col-6 m-auto col-6 m-sm-auto">
+                            <img src="{% static "img/robat.png" %}" alt="" class="col-lg-12 mt-lg-3 col-12 mt-3 col-sm-12"/>
+                        </div>
+
+                    </div>
+
+                    <div class="box-form-center">
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label text-white me-lg-2">دیدگاه</label>
+                            <textarea name="body" class="form-control holder-color text-white" id="exampleFormControlTextarea1" rows="3" placeholder="نقد و نظرات خود را بنویسید" style="background-color: #555555;border: none;color: white"></textarea>
+                        </div>
+
+                        <input type="submit" class="btn mt-lg-3 col-lg-2 text-white" value="ارسال" style="background-color: #FB4B4E;">
+
+                    </div>
+
+                    </form>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

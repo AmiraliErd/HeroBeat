@@ -1,0 +1,11 @@
+<html>
+<head><title>HeroBeat</title></head>
+<body bgcolor="white">
+<h1>{{ album.artist.first.name }} - {{ album.name }} (320)</h1><hr><pre>
+<a href="{{ album.image.url }}">Cover.jpg</a>                                          {{ album.created }}
+
+    {% for track in tracks_list %}
+    <a href="{{ track.quality_320.url }}">{{ track.artist.first.name }} - {{ track.name }}.mp3</a>                           {{ track.created }}
+    {% endfor %}
+</pre><hr></body>
+</html>
